@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureDrop Water Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>PureDrop Water Delivery</h1>
+            <p>Pure, Fresh, and Delivered to Your Doorstep</p>
+            <a href="#order" class="cta-button">Order Now</a>
+            <a href="#login" class="cta-button login-button">Login</a>
+            <a href="#signup" class="cta-button signup-button">Sign Up</a>
+            <div id="welcomeMessage" class="welcome-message"></div>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p> At PureDrop, we believe that staying hydrated should be simple, convenient, and refreshing. 
+
+That’s why we’re dedicated to delivering pure, high-quality water straight to your home or office. 
+
+Our water is sourced from natural springs and rigorously purified to ensure it meets the highest standards of taste and safety. 
+
+Whether you need regular deliveries for your family or a reliable supply for your workplace, PureDrop is here to make hydration effortless. 
+
+With our commitment to exceptional service and sustainability, we’re not just delivering water—we’re delivering peace of mind..</p>
+        </div>
+    </section>
+
+    <section id="order" class="order">
+        <div class="order-content">
+            <h2>Place Your Order</h2>
+            <form id="orderForm">
+                <label for="waterType">Select Water Type:</label>
+                <select id="waterType" name="waterType" required>
+                    <option value="mineral">Mineral Water</option>
+                    <option value="alkaline">Alkaline Water</option>
+                    <option value="distilled">Distilled Water</option>
+                </select>
+
+                <label for="quantity">Quantity (in liters):</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+
+                <label for="paymentMethod">Payment Method:</label>
+                <select id="paymentMethod" name="paymentMethod" required>
+                    <option value="mpesa">M-Pesa</option>
+                    <option value="cash">Cash</option>
+                    <option value="card">Card</option>
+                </select>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="past-orders">
+        <h2>Past Orders</h2>
+        <div id="pastOrdersList">
+            <!-- Past orders will be dynamically added here -->
+        </div>
+    </section>
+
+    <section id="login" class="login">
+        <div class="login-content">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="signup" class="signup">
+        <div class="signup-content">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <label for="signupUsername">Username:</label>
+                <input type="text" id="signupUsername" name="signupUsername" required>
+
+                <label for="signupEmail">Email:</label>
+                <input type="email" id="signupEmail" name="signupEmail" required>
+
+                <label for="signupPhone">Phone Number:</label>
+                <input type="tel" id="signupPhone" name="signupPhone" required>
+
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" name="signupPassword" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 PureDrop Water Delivery. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
